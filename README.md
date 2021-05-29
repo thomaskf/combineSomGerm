@@ -18,7 +18,9 @@ Then an executable file named *combineSomGerm* will appear
 
 ## Syntax
 
-`./combineSomGerm [options]`
+```
+./combineSomGerm [options]
+```
 
 Options:
    
