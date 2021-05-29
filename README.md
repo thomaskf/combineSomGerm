@@ -1,5 +1,22 @@
 # combineSomGerm
+
 This program reports the overlapped results between different germline and somatic results
+
+# Installation
+
+The software was written in C++, and it has been tested under linux and MacOS platform. You need
+to have C++ compiler installed in the machine in order to compile the source codes. The compilation
+steps are shown as follows:
+
+$ tar -zxvf combineSomGerm_2.2.tar.gz
+
+$ cd combineSomGerm_2.2
+
+$ make
+
+Then an executable file named combineSomGerm will appear
+
+# Usage
 
 Syntax: ./combineSomGerm [options]
 
