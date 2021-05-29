@@ -8,13 +8,13 @@ The software was written in C++, and it has been tested under linux and MacOS pl
 to have C++ compiler installed in the machine in order to compile the source codes. The compilation
 steps are shown as follows:
 
-$ tar -zxvf combineSomGerm-2.2.tar.gz
+```
+tar -zxvf combineSomGerm-2.2.tar.gz
+cd combineSomGerm-2.2
+make
+```
 
-$ cd combineSomGerm-2.2
-
-$ make
-
-Then an executable file named <I>combineSomGerm</I> will appear
+Then an executable file named *combineSomGerm* will appear
 
 ## Usage
 
