@@ -14,7 +14,7 @@ $ cd combineSomGerm-2.2
 
 $ make
 
-Then an executable file named combineSomGerm will appear
+Then an executable file named <I>combineSomGerm</I> will appear
 
 ## Usage
 
