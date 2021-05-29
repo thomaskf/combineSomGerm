@@ -10,7 +10,7 @@ steps are shown as follows:
 
 $ tar -zxvf combineSomGerm-v2.2.tar.gz
 
-$ cd combineSomGerm_2.2
+$ cd combineSomGerm-v2.2
 
 $ make
 
