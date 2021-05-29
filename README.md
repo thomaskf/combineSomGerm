@@ -61,7 +61,11 @@ Remark:
 
 2. Options '-g', '-o', and '-e' are compulsory.
 
-Example:
+##Example
+
+Example files are enclosed in the folder.
+
+Command:
 
 ```
 ./combineSomGerm -g patient16011.gatk.germline.vcf -r patient16011.Monovar.germline.vcf -s patient16011.gatk.somatic.vcf -s patient16011.somaticsniper.somatic.vcf -s patient16011.varscan.somatic.vcf -o patient16011.overlap.vcf -e1 patient16011.inconsist.log -e2 patient16011.err.log -f applyPassFilterFiles.txt
