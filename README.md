@@ -26,7 +26,7 @@ Syntax:
 
 Options:
    
-To specify the input files
+  - To specify the input files
 
 ```
 -g [main germline result file]
@@ -34,7 +34,7 @@ To specify the input files
 -s [combine somatic result file]
 ```
 
-To specify the output files
+  - To specify the output files
 
 ```
 -o [output vcf file for the overlapping and consistent results]
@@ -42,13 +42,13 @@ To specify the output files
 -e2 [output log file with non-overlapping records]
 ```
 
-To apply the 'PASS' filter on the files
+  - To apply the 'PASS' filter on the files
 
 ```
 -f [file contains the list of files to apply the filter]
 ```
 
-Other options:
+  - Other options:
 
 ```
 -t : Only keep the records with normal cells which are 0/0
