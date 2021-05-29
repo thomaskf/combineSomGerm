@@ -16,7 +16,9 @@ make
 
 Then an executable file named *combineSomGerm* will appear
 
-## Syntax
+## Usage
+
+Syntax:
 
 ```
 ./combineSomGerm [options]
