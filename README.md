@@ -21,22 +21,27 @@ Then an executable file named <I>combineSomGerm</I> will appear
 Syntax: ./combineSomGerm [options]
 
 Options:
-   To specify the input files
-      -g [main germline result file]
-      -r [other germline result file]
-      -s [combine somatic result file]
+   
+To specify the input files
+      
+-g [main germline result file]
+-r [other germline result file]
+-s [combine somatic result file]
 
-   To specify the output files
-      -o [output vcf file for the overlapping and consistent results]
-      -e1 [output log file with overlapping but inconsistent results]
-      -e2 [output log file with non-overlapping records]
+To specify the output files
 
-   To apply the 'PASS' filter on the files
-      -f [file contains the list of files to apply the filter]
+-o [output vcf file for the overlapping and consistent results]
+-e1 [output log file with overlapping but inconsistent results]
+-e2 [output log file with non-overlapping records]
 
-   Other options:
-      -t : Only keep the records with normal cells which are 0/0
-      -c : Only keep the consistent records
+To apply the 'PASS' filter on the files
+
+-f [file contains the list of files to apply the filter]
+
+Other options:
+
+-t : Only keep the records with normal cells which are 0/0
+-c : Only keep the consistent records
 
 Remark: 
 
