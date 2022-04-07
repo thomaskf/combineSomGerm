@@ -79,7 +79,7 @@ The followings are the methods implemented inside combineSomGerm
 
 2. For the main germline file, we ignore the position if all the non-empty tumor records on that position are the same as the normal record.
 
-3. We use the main germline file as blueprint, then compare all the records with the other germline files and the somatic files. The following comparison is performed:
+3. We use the main germline file as blueprint, then compare all the records with the other germline files and the somatic files. The positions with normal cells 0/1 will not be checked among the somatic records. The following lists out the detailed logic:
 
 ```
 For each position on the main germline file
