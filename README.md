@@ -84,17 +84,17 @@ The followings are the methods implemented inside combineSomGerm
 ```
 For each position on the main germline file
 	if the normal cell record is 0/0
-		if this position appears in all other germline files and somatic files (and all tumor records are consistent when option -c is used),
-		    keep the position
+		if this position appears in all other germline files and somatic files (and all non-empty tumor records are consistent when option -c is used),
+			keep the position
 		else
-		    ignore the position
-	    end if
+			ignore the position
+	    	end if
 	else
-	    if this position appears in all other germline files (and all tumor records are consistent when option -c is used),
-	         keep the position
-	    else
-             ignore the position
-        end if
-    end if
+		if this position appears in all other germline files (and all non-empty tumor records are consistent when option -c is used),
+			keep the position
+		else
+			ignore the position
+		end if
+	end if
 end for
 ```
