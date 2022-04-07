@@ -70,3 +70,31 @@ Command:
 ```
 ./combineSomGerm -g patient16011.gatk.germline.vcf -r patient16011.Monovar.germline.vcf -s patient16011.gatk.somatic.vcf -s patient16011.somaticsniper.somatic.vcf -s patient16011.varscan.somatic.vcf -o patient16011.overlap.vcf -e1 patient16011.inconsist.log -e2 patient16011.err.log -f applyPassFilterFiles.txt
 ```
+
+## Method
+
+The followings are the methods implemented inside combineSomGerm
+
+1. For each file, we ignore the positions without any non-empty tumor record.
+
+2. For the main germline file, we ignore the position if all the non-empty tumor records on that position are the same as the normal record.
+
+3. We use the main germline file as blueprint, then compare all the records with the other germline files and the somatic files. The following comparison is performed:
+
+```
+For each position on the main germline file
+	if the normal cell record is 0/0
+		if this position appears in all other germline files and somatic files (and all tumor records are consistent when option -c is used),
+		    keep the position
+		else
+		    ignore the position
+	    end if
+	else
+	    if this position appears in all other germline files (and all tumor records are consistent when option -c is used),
+	         keep the position
+	    else
+             ignore the position
+        end if
+    end if
+end for
+```
